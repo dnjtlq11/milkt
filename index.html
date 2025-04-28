@@ -13,13 +13,14 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
+      text-align: center;
     }
 
     h1 {
       font-size: 48px;
       color: #333;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
 
     .download-img {
@@ -32,16 +33,44 @@
     .download-img:hover {
       transform: scale(1.1);
     }
+
+    .guide-links {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .guide-links a {
+      font-size: 20px;
+      color: #4CAF50;
+      text-decoration: none;
+      border: 2px solid #4CAF50;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .guide-links a:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
   </style>
 </head>
 <body>
 
   <h1>밀크T 런처 다운로드</h1>
 
-  <!-- 다운로드 이미지 버튼 -->
+  <!-- 다운로드 버튼 -->
   <a href="https://m.milkt.co.kr/Common/CDataDown?txtFName=/edubank/Launcher/MilkTLauncher.apk&compareHash=bae792c58f5b720c3bf778be8a72c6d0" download>
     <img src="다운로드버튼.png" alt="밀크T 런처 다운로드 버튼" class="download-img">
   </a>
+
+  <!-- 설치 가이드 링크들 -->
+  <div class="guide-links">
+    <a href="A6_설치가이드.pdf" target="_blank">A6 기기 밀크T 런처 설치 가이드 보기</a>
+    <a href="S6_설치가이드.pdf" target="_blank">S6 기기 밀크T 런처 설치 가이드 보기</a>
+  </div>
 
 </body>
 </html>
